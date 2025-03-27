@@ -1,5 +1,9 @@
 import React from "react";
 
+function handleClick(){
+    alert('form submitted!');
+}
+
 export default function InputForm() {
     return (
         <section className="m-6 p-6 border rounded-lg shadow-lg bg-white max-w-4xl mx-auto">
@@ -87,7 +91,7 @@ export default function InputForm() {
                 </div>
             </form>
                 <div className="flex justify-center text-lg text-gray-200">
-                    <button type="submit" className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded w-20">Submit</button>
+                    <button onClick={handleClick} type="submit" className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded w-20">Submit</button>
                 </div>
         </section>
     );
